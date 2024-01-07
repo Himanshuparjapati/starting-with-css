@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            block-size: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-block-end: 8px;
+            color: #333;
+        }
+
+        input, select, textarea {
+            inline-size: 100%;
+            padding: 10px;
+            margin-block-end: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Custom Color Palette */
+        input[type="text"] {
+            background-color: #f7f7f7;
+        }
+
+        input[type="password"] {
+            background-color: #e0f7fa;
+        }
+
+        select {
+            background-color: #fce4ec;
+        }
+
+        textarea {
+            background-color: #f3e5f5;
+        }
+
+        /* Apply opacity to a form section */
+        .opacity-section {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+        <div class="opacity-section">
+            <label for="extraInfo">Additional Information:</label>
+            <input type="text" id="extraInfo" name="extraInfo" placeholder="Enter additional information">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
